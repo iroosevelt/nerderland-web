@@ -2,6 +2,7 @@ import { Heart, ExternalLink, MoreHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
+import { useRouter } from "next/navigation";
 
 interface PinCardProps {
   id: string;
@@ -17,10 +18,12 @@ export default function PinCard({
   description,
   height,
 }: PinCardProps) {
+  const router = useRouter();
   return (
     <div
-      className="group relative bg-card rounded-0 overflow-hidden shadow-pin hover:shadow-pin-hover transition-all duration-300 cursor-pointer mb-4"
+      className="group relative bg-card rounded-0 overflow-hidden shadow-pin hover:shadow-pin-hover transition-all duration-300 mb-4"
       style={{ height: `${height}px` }}
+      onClick={() => router.push("/post/test")}
     >
       {/* Image */}
       <Image

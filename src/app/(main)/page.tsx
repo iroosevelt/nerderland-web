@@ -1,4 +1,5 @@
-import { Feed } from "@/components/shared/feed";
+// app/(main)/page.tsx
+import { Feed } from "@/components/Feed";
 
 export default function Home() {
   return (

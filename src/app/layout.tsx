@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
-import { Bungee, Azeret_Mono, Press_Start_2P } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
+// app/layout.tsx
 import { Navbar } from "@/components/Navbar";
+import { ThemeProvider } from "@/components/theme-provider";
+import type { Metadata } from "next";
+import { Azeret_Mono, Bungee, Press_Start_2P } from "next/font/google";
+import "./globals.css";
+import { NerdModal } from "@/components/nerd-modal/NerdModal";
 
 const bungee = Bungee({
   variable: "--font-bungee",
@@ -76,9 +78,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+  modal,
+}: {
   children: React.ReactNode;
-}>) {
+  modal: React.ReactNode; // 👈 slot from @modal
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -98,7 +102,9 @@ export default function RootLayout({
             }}
           />
           <Navbar />
+          {modal}
           {children}
+          <NerdModal />
         </ThemeProvider>
       </body>
     </html>

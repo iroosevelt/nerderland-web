@@ -175,6 +175,7 @@
 
     --color-yellow: #fff200;
     --color-pink: #ff31e2;
+    --color-blue: #1129ff;
     --color-muted: #dee0d4;
     --color-accent: #656660;
     --color-primary: #ffffff;
@@ -185,7 +186,7 @@
     scroll-behavior: smooth;
   }
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/20;
   }
   body {
     @apply bg-background text-foreground;

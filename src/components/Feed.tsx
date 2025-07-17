@@ -1,8 +1,10 @@
-// src/components/shared/feed-card.tsx
+// src/components/Feed.tsx
+"use client";
 
-import BoardCard from "../BoardCard";
-import FolderCard from "../FolderCard";
-import MasonryGrid from "../MasonryGrid";
+import BoardCard from "./BoardCard";
+import DropCard from "./DropCard";
+import FolderCard from "./DropCard";
+import MasonryGrid from "./MasonryGrid";
 
 export function Feed() {
   return (
@@ -35,13 +37,13 @@ export function Feed() {
       {/* Top Secret Folders */}
       <header className="p-4">
         <div className="font-display">
-          <h2 className="text-2xl">Folders · Top Secret</h2>
+          <h2 className="text-2xl">Drops · Top Secret</h2>
         </div>
       </header>
       <section className="pb-8 px-4">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
           {[...Array(9)].map((_, index) => (
-            <FolderCard key={`folder-${index}`} />
+            <DropCard key={`folder-${index}`} />
           ))}
         </div>
       </section>
