@@ -1,8 +1,10 @@
 # 🛸 Nerderland Web
 
-*A social arena floating in space, built by humans for humans*
+**“Inside every mystery, mystery...”**
 
-The main web application for Nerderland - where nerds gather to share stories, build boards, and level up their nerdity.
+_The Social arena for Nerds_
+
+The main web application for Nerderland - where nerds gather to share stories, build discourse, and level up their nerdity.
 
 ## Quick Start
 
@@ -20,7 +22,7 @@ Open [localhost:3000](http://localhost:3000) and welcome to the arena.
 - **Tailwind CSS** - For when you need pixels to behave
 - **Drizzle ORM** - Type-safe database queries that just work
 - **Wallet Connect** - Web3 authentication made simple
-- **Cloudinary** - Image uploads that scale
+- **Cloudinary** - Image uploads
 
 ## Environment Setup
 
@@ -51,4 +53,4 @@ Found a bug? Have an idea? Pull requests welcome. Keep it nerdy.
 
 ---
 
-*Built by humans, floating in space • Nerderland Social Arena, 2025* 🛸
+_Built by humans, floating in space • Nerderland Social Arena, 2025_ 🛸
